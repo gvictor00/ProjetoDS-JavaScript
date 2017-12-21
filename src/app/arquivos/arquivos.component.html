@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Histórico de movimentação</h2>         
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>EMPRESA</th>
+        <th>UPLOADERS</th>
+        <th>ARQUIVO</th>
+        <th>DATA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="let arquivo of arquivos">
+      	<td>{{arquivo.id}}</td>
+      	<td>{{arquivo.empresa}}</td>
+      	<td>{{arquivo.uploader}}</td>
+      	<td>{{arquivo.arquivo}}</td>
+      	<td>{{arquivo.data}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
